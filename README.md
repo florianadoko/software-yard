@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📖 README: Two-Step Form Application
+🚀 Project Overview
+This project is a two-step form built using Next.js, TypeScript, Zustand for state management, and Tailwind CSS for styling. The form includes:
 
-## Getting Started
+Step 1: User inputs their first name and last name.
+Step 2: User enters their phone number with a country code selector.
+Validation: Client-side form validation ensures all required fields are filled correctly.
+Accessibility (A11Y): ARIA attributes are implemented for better screen reader support.
+🛠️ Setup and Running the App Locally
+Follow these steps to set up and run the application on your local machine:
 
-First, run the development server:
+1️⃣ Prerequisites
+Ensure you have the following installed:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Node.js (v16+ recommended)
+npm (v7+) or yarn (v1.22+)
+Git (to clone the repository)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2️⃣ Clone the Repository
+git clone https://github.com/florianadoko/software-yard
+cd two-step-form
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3️⃣ Install Dependencies
+Using npm: npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4️⃣ Run the Development Server
+Start the local development server: npm run dev
 
-## Learn More
+🔎 Testing the Two-Step Form
+You can test the form manually or by running automated tests.
 
-To learn more about Next.js, take a look at the following resources:
+✅ Manual Testing
+Follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Step 1:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Enter valid First Name (e.g., "John").
+Enter valid Last Name (e.g., "Doe").
+Click Continue.
+Step 2:
 
-## Deploy on Vercel
+Click on the country code selector and select a code (e.g., +44).
+Enter a valid phone number (7-15 digits, no special characters).
+Click Continue.
+Validation Checks:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+First Name / Last Name Required: Leaving these fields empty should show an error.
+Phone Number Required: Submitting without a phone number should show an error.
+Phone Number Format: Entering fewer than 7 or more than 15 digits should show a format error.
