@@ -29,16 +29,15 @@ Start the local development server: npm run dev
 🔎 Testing the Two-Step Form
 You can test the form manually or by running automated tests.
 
-✅ Manual Testing
+✅ Manual Testing (ex. Step one of the form)
 Follow these steps:
 
 Step 1:
-
 Enter valid First Name (e.g., "John").
 Enter valid Last Name (e.g., "Doe").
 Click Continue.
-Step 2:
 
+Step 2:
 Click on the country code selector and select a code (e.g., +44).
 Enter a valid phone number (7-15 digits, no special characters).
 Click Continue.
