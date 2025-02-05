@@ -1,10 +1,10 @@
 import { Config } from "jest";
 
 const config: Config = {
-  preset: "ts-jest",
+  preset: "ts-jest", // Use ts-jest instead of Babel
   testEnvironment: "jsdom",
   transform: {
-    "^.+\\.(t|j)sx?$": "babel-jest", // Use Babel for TypeScript & JavaScript
+    "^.+\\.(t|j)sx?$": "ts-jest", // Use ts-jest for TypeScript & JavaScript
   },
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
